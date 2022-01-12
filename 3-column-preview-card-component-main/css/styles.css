@@ -1,0 +1,143 @@
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.orange-bg {
+  background-color: var(--bright-orange);
+}
+
+.orange-font {
+  color: var(--bright-orange);
+}
+
+.dark-cyan-bg {
+  background-color: var(--dark-cyan);
+}
+
+.dark-cyan-font {
+  color: var(--dark-cyan);
+}
+
+.very-dark-cyan-bg {
+  background-color: var(--very-dark-cyan);
+}
+
+.very-dark-cyan-font {
+  color: var(--very-dark-cyan);
+}
+
+.white-font {
+  color: var(--transparent-white);
+}
+
+.grey-font {
+  color: var(--very-light-gray);
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-container {
+  height: 500px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.half-width {
+  width: 50%;
+}
+
+.grid-container > section {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.grid-container .card__content {
+  height: 90%;
+  width: 80%;
+  margin: 0 auto;
+  align-content: center;
+  padding-top: 2rem;
+}
+
+h2.grey-font {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+p.white-font {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+.grid-container a {
+  cursor: pointer;
+  background-color: var(--transparent-white);
+  width: 70%;
+  height: 3rem;
+  border-radius: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1rem;
+}
+
+.grid-container a.orange-font:hover {
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border: 3px solid var(--transparent-white);
+}
+
+.grid-container a.dark-cyan-font:hover {
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+  border: 3px solid var(--transparent-white);
+}
+
+.grid-container a.very-dark-cyan-font:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--transparent-white);
+  border: 3px solid var(--transparent-white);
+}
+
+@media (max-width: 60em) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
