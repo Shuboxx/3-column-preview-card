@@ -95,7 +95,7 @@ p {
     cursor: pointer;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 600px) {
     .main {
         display: flex;
         flex: 1;
